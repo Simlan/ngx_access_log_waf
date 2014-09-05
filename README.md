@@ -16,8 +16,8 @@ ngx_access_log_waf
 
 例子
 ----
-  URL: /restful/login
-  在周一9:30的调用频率是最高的，假定为以下数值：
-    - HTTP_status_code_200:100/s, 
-    - HTTP_status_code_403:100/s，
-  那么在下周一的同一时刻，其调用次数也应该在此范围正负 *10%* 侧认为正常。
+    URL: /restful/login
+    在周一9:30的调用频率是最高的，假定为以下数值：
+      - HTTP_status_code_200:100/s, 
+      - HTTP_status_code_403:100/s，
+    那么在下周一的同一时刻，其调用次数也应该在此范围正负 *10%* 侧认为正常。
