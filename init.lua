@@ -1,11 +1,11 @@
 
-local conf = require "config"
+local configig = require "config"
 local json = require "cjson"
 
 function read_map_file()
-    local fp = io.open(conf.map_file)
+    local fp = io.open(config.map_file)
     if fp == nil then
-        ngx.log(ngx.ERR, 'map file not found ->[', conf.map_file, ']')
+        ngx.log(ngx.ERR, 'map file not found ->[', config.map_file, ']')
         return nil
     end
     local tb = cjson.decode(fp:read('*all'))
@@ -22,8 +22,8 @@ function read_map_file()
     return tb
 end
 
-conf.map = read_map_file()
+config.map = read_map_file()
 
-for k, v in pairs(conf.map) do
-    ngx.log(ngx.ERR, k)
+for k, v in pairs(config.map) do
+    ngx.log(ngx.ERR, k, ' type(v)=', type(config.map['/index']))
 end
