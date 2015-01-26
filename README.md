@@ -1,7 +1,7 @@
 ngx_access_log_waf
 ==================
 
-通过实时分析nginx 的access log 进行 WAF 防预
+通过实时分析nginx 的access log 进行 WAF(Web Application Firewall，简称： WAF) 防预
 
 
 需求:
