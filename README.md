@@ -8,10 +8,10 @@
 - IpRateLimit,限频开关 on/off。
 - ip_rps,单个ip每秒访问次数。
 - total_rps,单每秒ip的访问总次数。
-- - -
+
 ##### ip黑白名单:
 nginx的deny和allow功能,配置项在conf/iplimite.conf。
-- - -
+
 ##### reload配置：
 以上配置修改候需要对nginx进行reload,方可生效。
 ```
